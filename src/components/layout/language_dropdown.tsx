@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { useState } from "react";
 import { Icons } from "@/lib/icons";
+import { cn } from "@/lib/utils";
 const languages = [
     {
         name: "english",
@@ -41,12 +42,20 @@ function LanguageDropdown() {
                 </Button>
             </DropdownMenuTrigger>
 
-            <DropdownMenuContent className="">
+            <DropdownMenuContent className="mt-2">
                 {languages.map((lang, idx) => {
                     return (
-                        <DropdownMenuItem key={idx} onClick={() => setLanguage(lang.name)} className="flex gap-2">
+                        <DropdownMenuItem
+                            key={idx}
+                            onClick={() => setLanguage(lang.name)}
+                            className="flex gap-2 cursor-pointer"
+                        >
                             <lang.Icon />
-                            <span>{lang.label}</span>
+                            <span
+                                className={cn("text-secondary-foreground", lang.name == language && "text-foreground")}
+                            >
+                                {lang.label}
+                            </span>
                         </DropdownMenuItem>
                     );
                 })}

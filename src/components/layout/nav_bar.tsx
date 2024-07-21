@@ -1,9 +1,10 @@
 import React from "react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import { Icons } from "@/lib/icons";
 import LanguageDropdown from "./language_dropdown";
+import ProfileDropdown from "./profile_dropdown";
 function NavBar() {
     const location = useLocation();
     console.log("🚀 ~ NavBar ~ location:", location);
@@ -23,7 +24,7 @@ function NavBar() {
         },
     ];
     return (
-        <div className="w-full flex gap-1 p-2">
+        <div className="w-full flex gap-1 p-2 shadow z-20">
             <div className="grow flex items-center">
                 <Button variant={"ghost"} size={"icon"} className="text-secondary-foreground">
                     <Menu />
@@ -38,6 +39,7 @@ function NavBar() {
                 );
             })}
             <LanguageDropdown />
+            <ProfileDropdown />
         </div>
     );
 }

@@ -1,9 +1,9 @@
 import { Menu } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
-import { Button } from "./ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Icons } from "@/lib/icons";
+import { Button } from "../ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
 const SideBarButtons = [
     {

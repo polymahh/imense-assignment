@@ -14,7 +14,6 @@ const routes: RouteObject[] = [
             {
                 path: "/",
                 element: <Home />,
-                handle: "dashboard",
             },
             {
                 path: "/ppe-violations",
