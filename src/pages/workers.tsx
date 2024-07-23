@@ -1,7 +1,7 @@
 import { DataTable } from "@/components/table/data_table";
+import Sites from "@/components/table/sites";
 import { columns } from "@/components/table/table_columns";
 import TableFilters from "@/components/table/table_filters";
-import Sites from "@/components/workers/sites";
 import { workers_type } from "@/data/workers";
 import useDebounce from "@/hooks/useDebounce";
 import useScrollObserver from "@/hooks/useScrollObserver";

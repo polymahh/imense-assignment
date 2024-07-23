@@ -1,5 +1,3 @@
-import React from "react";
-
 function PPEs() {
     return <div>P.P.Es</div>;
 }
