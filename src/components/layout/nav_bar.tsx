@@ -1,16 +1,11 @@
-import React from "react";
 import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
-import { useLocation } from "react-router-dom";
 import { Icons } from "@/lib/icons";
 import LanguageDropdown from "./language_dropdown";
 import ProfileDropdown from "./profile_dropdown";
 import { useUiContext } from "@/context/ui_context";
 import { cn } from "@/lib/utils";
 function NavBar() {
-    const location = useLocation();
-    console.log("🚀 ~ NavBar ~ location:", location);
-
     const { minimised, setMinimised, fullScreen } = useUiContext();
 
     const utilButtons = [

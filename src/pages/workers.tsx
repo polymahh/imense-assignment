@@ -45,7 +45,6 @@ function Workers() {
 
     useEffect(() => {
         setWorkers((data?.pages as workers_type[][])?.flat());
-        console.log("🚀 ~ useEffect ~ data:", data);
     }, [data]);
     return (
         <div className="flex flex-col grow  ">

@@ -18,43 +18,6 @@ export const getWorkers = async ({ search, contractorSort, dateSort, limit, leng
     });
 };
 
-// const filterData = ({ contractorSort, search, limit, length, dateSort }: filterProps) => {
-//     // filter based on contractor
-//     let filter1_data;
-//     if (contractorSort === "all" || !contractorSort) {
-//         filter1_data = workers_data;
-//     } else {
-//         filter1_data = workers_data.filter((item) => item.contractor === contractorSort);
-//     }
-
-//     // filter based on search term
-//     let filter2_data;
-//     if (search) {
-//         filter2_data = filter1_data.filter(
-//             (item) =>
-//                 item.name.toLowerCase().includes(search.toLowerCase()) ||
-//                 item.contractor.toLowerCase().includes(search.toLowerCase()) ||
-//                 item.role.toLowerCase().includes(search.toLowerCase())
-//         );
-//     } else filter2_data = filter1_data;
-
-//     // skip length and take limit
-//     const filter3_data = filter2_data.slice(Number(length), Number(length) + Number(limit));
-
-//     // filter on every item violations outside of date range
-//     let filter4_data;
-//     if (dateSort?.from && dateSort?.to) {
-//         console.log("🚀 ~ filterData ~ dateSort:", dateSort);
-//         filter4_data = filter3_data.map((item) => {
-//             return item.violations.filter((violation) => {
-//                 return new Date(violation.date) >= dateSort.from! && new Date(violation.date) <= dateSort.to!;
-//             });
-//         });
-//     } else filter4_data = filter3_data;
-
-//     return filter4_data;
-// };
-
 const filterData = ({ contractorSort, search, limit, length, dateSort }: filterProps) => {
     const filterByContractor = (data: workers_type[], contractorSort: string) => {
         if (contractorSort === "all" || !contractorSort) {
