@@ -22,6 +22,8 @@ module.exports = {
                 ring: "hsl(var(--ring))",
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
+                codered: "hsl(var(--codered))",
+                codeyellow: "hsl(var(--codeyellow))",
                 primary: {
                     DEFAULT: "hsl(var(--primary))",
                     foreground: "hsl(var(--primary-foreground))",
@@ -73,5 +75,31 @@ module.exports = {
             },
         },
     },
-    plugins: [require("tailwindcss-animate")],
+    plugins: [
+        require("tailwindcss-animate"),
+        //customise scrollbar
+        function ({ addUtilities }) {
+            addUtilities(
+                {
+                    ".scrollbar-thin": {
+                        "scrollbar-width": "thin",
+                        "scrollbar-color": "hsl(var(--border)) hsl(var(--background))",
+                    },
+                    ".scrollbar-webkit": {
+                        "&::-webkit-scrollbar": {
+                            width: "8px",
+                        },
+                        "&::-webkit-scrollbar-track": {
+                            background: "hsl(var(--background))",
+                        },
+                        "&::-webkit-scrollbar-thumb": {
+                            background: "hsl(var(--border))",
+                            borderRadius: "9999px",
+                        },
+                    },
+                },
+                ["responsive", "hover"]
+            );
+        },
+    ],
 };

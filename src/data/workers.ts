@@ -1,6 +1,10 @@
-type Violation = {
+export type Violation = {
     name: string;
-    createdAt: string[];
+    img: string;
+    comment: string;
+    date: string;
+    time: string;
+    number: string;
 };
 
 export type workers_type = {
@@ -15,7 +19,7 @@ export type workers_type = {
 export const workers_keys = [
     {
         name: "protective gloves",
-        image: "/images/safety_gloves.png",
+        image: "/images/safety-gloves.png",
     },
     {
         name: "safety glasses",
@@ -43,7 +47,7 @@ export const workers_keys = [
     },
     {
         name: "hi-vis jacket",
-        image: "/images/Hi-Vis_Jacket.png",
+        image: "/images/hi-vis_jacket.png",
     },
     {
         name: "safety harness",
@@ -67,52 +71,4987 @@ export const workers_data: workers_type[] = [
     {
         name: "worker1",
         role: "maneger",
-        image: "/images/profile.svg",
+        image: "/images/profile2.png",
         contractor: "biowanze",
         contractor_img: "/images/profile.svg",
         violations: [
             {
                 name: "protective Gloves",
-                createdAt: ["2022-01-01", "2022-01-01"],
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
             },
             {
                 name: "mask protection",
-                createdAt: ["2022-01-01", "2022-01-01", "2022-01-01", "2022-01-01"],
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
             },
             {
-                name: "safety shoes",
-                createdAt: ["2022-01-01", "2022-01-01", "2022-01-01", "2022-01-01"],
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
             },
             {
-                name: "safety glasses",
-                createdAt: ["2022-01-01", "2022-01-01", "2022-01-01", "2022-01-01"],
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
             },
             {
-                name: "ear protection",
-                createdAt: ["2022-01-01", "2022-01-01", "2022-01-01", "2022-01-01"],
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
             },
             {
-                name: "knee pads",
-                createdAt: ["2022-01-01", "2022-01-01", "2022-01-01", "2022-01-01"],
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
             },
             {
                 name: "coverall",
-                createdAt: ["2022-01-01", "2022-01-01", "2022-01-01", "2022-01-01"],
-            },
-            {
-                name: "Hi-Vis Jacket",
-                createdAt: ["2022-01-01", "2022-01-01", "2022-01-01", "2022-01-01"],
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
             },
             {
                 name: "Face Shield",
-                createdAt: ["2022-01-01", "2022-01-01", "2022-01-01", "2022-01-01"],
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
             },
             {
-                name: "Welding Helmet",
-                createdAt: ["2022-01-01", "2022-01-01", "2022-01-01", "2022-01-01"],
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
             },
         ],
     },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
 
-    // ...
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    // contractor 2 ------------------------------------------------
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "contractor2",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "contractor2",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "contractor2",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    // contractor 3
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "contractor3",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "contractor3",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "contractor3",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    // contractor 2 ------------------------------------------------
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "contractor2",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "contractor2",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "contractor2",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    // contractor 3
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "contractor3",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "contractor3",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "contractor3",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    // contractor 2 ------------------------------------------------
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "contractor2",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "contractor2",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "contractor2",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    // contractor 3
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "contractor3",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "contractor3",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "contractor3",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker1",
+        role: "maneger",
+        image: "/images/profile2.png",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "protective Gloves",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "protective Gloves",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "mask protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "coverall",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Face Shield",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker2",
+        role: "maneger",
+        image: "/images/profile3.webp",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "safety glasses",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety glasses",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+
+            {
+                name: "safety shoes",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "safety shoes",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#12",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Hi-Vis Jacket",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#13",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#14",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#15",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "Welding Helmet",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#16",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
+    {
+        name: "worker3",
+        role: "maneger",
+        image: "",
+        contractor: "biowanze",
+        contractor_img: "/images/profile.svg",
+        violations: [
+            {
+                name: "ear protection",
+                date: "2024-07-04",
+                time: "10:34",
+                number: "#01",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-06",
+                time: "10:34",
+                number: "#02",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-08",
+                time: "10:34",
+                number: "#03",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-10",
+                time: "10:34",
+                number: "#04",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-12",
+                time: "10:34",
+                number: "#05",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-14",
+                time: "10:34",
+                number: "#06",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-16",
+                time: "10:34",
+                number: "#07",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-18",
+                time: "10:34",
+                number: "#08",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-20",
+                time: "10:34",
+                number: "#09",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-22",
+                time: "10:34",
+                number: "#10",
+                img: "/images/violation2.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+            {
+                name: "ear protection",
+                date: "2024-07-24",
+                time: "10:34",
+                number: "#11",
+                img: "/images/violation1.png",
+                comment:
+                    "consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscingdo eiusmod tempor incididunt labore",
+            },
+        ],
+    },
 ];

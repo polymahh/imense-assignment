@@ -5,9 +5,13 @@ import { useLocation } from "react-router-dom";
 import { Icons } from "@/lib/icons";
 import LanguageDropdown from "./language_dropdown";
 import ProfileDropdown from "./profile_dropdown";
+import { useUiContext } from "@/context/ui_context";
+import { cn } from "@/lib/utils";
 function NavBar() {
     const location = useLocation();
     console.log("🚀 ~ NavBar ~ location:", location);
+
+    const { minimised, setMinimised, fullScreen } = useUiContext();
 
     const utilButtons = [
         {
@@ -24,9 +28,14 @@ function NavBar() {
         },
     ];
     return (
-        <div className="w-full flex gap-1 p-2 shadow z-20">
+        <div className={cn("w-full gap-1 p-2 shadow z-20", fullScreen ? "hidden" : "flex")}>
             <div className="grow flex items-center">
-                <Button variant={"ghost"} size={"icon"} className="text-secondary-foreground">
+                <Button
+                    variant={"ghost"}
+                    size={"icon"}
+                    className={cn("text-secondary-foreground", minimised ? "flex" : "hidden")}
+                    onClick={() => setMinimised(!minimised)}
+                >
                     <Menu />
                 </Button>
                 <span>Overview</span>

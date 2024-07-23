@@ -1,15 +1,30 @@
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
-function ContractorsSelect() {
+function ContractorsSelect({
+    setContractorSort,
+    contractorSort,
+}: {
+    setContractorSort: Dispatch<SetStateAction<string>>;
+    contractorSort: string;
+}) {
     return (
-        <Select>
-            <SelectTrigger className="w-[180px] h-8 rounded-xs border-border">
-                <SelectValue defaultValue="all" />
+        <Select onValueChange={setContractorSort} value={contractorSort}>
+            <SelectTrigger className="w-[180px] h-8 rounded-xs border-border text-xs text-muted-foreground">
+                <SelectValue defaultValue="all" placeholder="All Contractors" />
             </SelectTrigger>
-            <SelectContent>
-                <SelectItem value="all">All Contractors</SelectItem>
-                <SelectItem value="contractor1">Contractor 1</SelectItem>
-                <SelectItem value="contractor2">Contractor 2</SelectItem>
+            <SelectContent className="text-xs text-muted-foreground">
+                <SelectItem className="text-xs text-muted-foreground" value="all">
+                    All Contractors
+                </SelectItem>
+                <SelectItem className="text-xs text-muted-foreground" value="biowanze">
+                    Biowanze
+                </SelectItem>
+                <SelectItem className="text-xs text-muted-foreground" value="contractor2">
+                    Contractor 2
+                </SelectItem>
+                <SelectItem className="text-xs text-muted-foreground" value="contractor3">
+                    Contractor 3
+                </SelectItem>
             </SelectContent>
         </Select>
     );
